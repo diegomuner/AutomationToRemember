@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="8793" started-at="2018-12-04T20:56:16Z" finished-at="2018-12-04T20:56:25Z">
+  <suite name="Default suite" duration-ms="3694" started-at="2018-12-04T22:04:07Z" finished-at="2018-12-04T22:04:10Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="8793" started-at="2018-12-04T20:56:16Z" finished-at="2018-12-04T20:56:25Z">
-      <class name="WebDriver.testwebdriver">
-        <test-method status="PASS" signature="test()[pri:0, instance:WebDriver.testwebdriver@4520ebad]" name="test" duration-ms="8779" started-at="2018-12-04T20:56:16Z" finished-at="2018-12-04T20:56:25Z">
+    <test name="Default test" duration-ms="3694" started-at="2018-12-04T22:04:07Z" finished-at="2018-12-04T22:04:10Z">
+      <class name="tests.testwebdriver">
+        <test-method status="PASS" signature="test1()[pri:0, instance:tests.testwebdriver@62ee68d8]" name="test1" duration-ms="3680" started-at="2018-12-04T22:04:07Z" finished-at="2018-12-04T22:04:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- WebDriver.testwebdriver -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- test1 -->
+      </class> <!-- tests.testwebdriver -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
