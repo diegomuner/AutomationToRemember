@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 
 
-public abstract class PageObjects {
+public abstract class PageElements {
 
 
 protected static WebDriver browser;

@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import webdriver.WebDriverClass;
-import pageelements.PageObjects;
+import pageelements.PageElements;
 
 public class HomePage {
 boolean present;
