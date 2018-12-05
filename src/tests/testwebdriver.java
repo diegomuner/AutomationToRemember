@@ -2,24 +2,32 @@
 package tests;
 
 
+import org.openqa.selenium.WebDriver;
 import org.testng.ReporterConfig.Property;
 import org.testng.annotations.Test;
 
-
+import pages.HomePage;
 import webdriver.ReadProperties;
 import webdriver.WebDriverClass;
+import pages.HomePage;
+public class testwebdriver extends BaseTest {
+WebDriver driver;
+HomePage homepage;
 
-public class testwebdriver {
+	
+	
 	
 	@Test
 	public void test1() throws InterruptedException {
-		WebDriverClass.ChromeBrowser();
-		
-		
-		WebDriverClass.Navigate(ReadProperties.ReadProperty("url"));
-		System.out.println(ReadProperties.ReadProperty("variable55"));
+		driver= WebDriverClass.getDriver();
+		homepage = new HomePage(driver);
 		Thread.sleep(5000);
-		WebDriverClass.CloseBrowser();
+		homepage.GoToBlog();	
+		
+		Thread.sleep(5000);
+		
+		
+		
 	
 		
 		
@@ -27,5 +35,10 @@ public class testwebdriver {
 		
 		
 	}
+
+
+
+
+
 
 }

@@ -2,15 +2,23 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8731" started-at="2018-12-05T03:20:30Z" finished-at="2018-12-05T03:20:39Z">
+  <suite name="Default suite" duration-ms="21443" started-at="2018-12-05T16:26:12Z" finished-at="2018-12-05T16:26:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8731" started-at="2018-12-05T03:20:30Z" finished-at="2018-12-05T03:20:39Z">
+    <test name="Default test" duration-ms="21443" started-at="2018-12-05T16:26:12Z" finished-at="2018-12-05T16:26:34Z">
       <class name="tests.testwebdriver">
-        <test-method status="PASS" signature="test1()[pri:0, instance:tests.testwebdriver@62ee68d8]" name="test1" duration-ms="8717" started-at="2018-12-05T03:20:30Z" finished-at="2018-12-05T03:20:39Z">
+        <test-method status="PASS" signature="baseBeforeTest()[pri:0, instance:tests.testwebdriver@4cc0edeb]" name="baseBeforeTest" is-config="true" duration-ms="5594" started-at="2018-12-05T16:26:12Z" finished-at="2018-12-05T16:26:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseBeforeTest -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:tests.testwebdriver@4cc0edeb]" name="test1" duration-ms="15184" started-at="2018-12-05T16:26:18Z" finished-at="2018-12-05T16:26:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="baseAfterTest()[pri:0, instance:tests.testwebdriver@4cc0edeb]" name="baseAfterTest" is-config="true" duration-ms="650" started-at="2018-12-05T16:26:33Z" finished-at="2018-12-05T16:26:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- baseAfterTest -->
       </class> <!-- tests.testwebdriver -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -2,14 +2,21 @@ package webdriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
-
 public class WebDriverClass {
-	private static ChromeDriver browser;
+	public static ChromeDriver browser;
 	
 	public static void ChromeBrowser() {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\diego\\Downloads\\chromedriver_win32\\chromedriver.exe");
 		browser = new ChromeDriver();
+	
 		}
+	
+	
+	public WebDriverClass() {
+		
+		ChromeBrowser();
+		
+	}
 	
 	public static void CloseBrowser() {
 		
@@ -19,6 +26,13 @@ public class WebDriverClass {
 	public static void Navigate(String link) {
 		
 		browser.get(link);
+		
+	}
+	
+	public static ChromeDriver getDriver() {
+		
+		return browser;
+		
 		
 	}
 }

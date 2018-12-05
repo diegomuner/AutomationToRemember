@@ -6,6 +6,8 @@
       <class name="tests.testwebdriver">
         <methods>
           <include name="test1"/>
+          <include name="baseAfterTest"/>
+          <include name="baseBeforeTest"/>
         </methods>
       </class> <!-- tests.testwebdriver -->
     </classes>
