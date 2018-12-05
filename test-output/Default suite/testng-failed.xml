@@ -5,7 +5,7 @@
     <classes>
       <class name="tests.testwebdriver">
         <methods>
-          <include name="test1"/>
+          <include name="OpenForum"/>
           <include name="baseAfterTest"/>
           <include name="baseBeforeTest"/>
         </methods>
