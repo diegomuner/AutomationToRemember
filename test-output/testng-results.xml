@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21443" started-at="2018-12-05T16:26:12Z" finished-at="2018-12-05T16:26:34Z">
+  <suite name="Suite" duration-ms="40940" started-at="2018-12-05T17:21:02Z" finished-at="2018-12-05T17:21:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21443" started-at="2018-12-05T16:26:12Z" finished-at="2018-12-05T16:26:34Z">
+    <test name="Test" duration-ms="40940" started-at="2018-12-05T17:21:02Z" finished-at="2018-12-05T17:21:43Z">
       <class name="tests.testwebdriver">
-        <test-method status="PASS" signature="baseBeforeTest()[pri:0, instance:tests.testwebdriver@4cc0edeb]" name="baseBeforeTest" is-config="true" duration-ms="5594" started-at="2018-12-05T16:26:12Z" finished-at="2018-12-05T16:26:18Z">
+        <test-method status="PASS" signature="baseBeforeTest()[pri:0, instance:tests.testwebdriver@482f8f11]" name="baseBeforeTest" is-config="true" duration-ms="4991" started-at="2018-12-05T17:21:02Z" finished-at="2018-12-05T17:21:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseBeforeTest -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:tests.testwebdriver@4cc0edeb]" name="test1" duration-ms="15184" started-at="2018-12-05T16:26:18Z" finished-at="2018-12-05T16:26:33Z">
+        <test-method status="PASS" signature="OpenBlog()[pri:0, instance:tests.testwebdriver@482f8f11]" name="OpenBlog" duration-ms="15179" started-at="2018-12-05T17:21:07Z" finished-at="2018-12-05T17:21:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="baseAfterTest()[pri:0, instance:tests.testwebdriver@4cc0edeb]" name="baseAfterTest" is-config="true" duration-ms="650" started-at="2018-12-05T16:26:33Z" finished-at="2018-12-05T16:26:34Z">
+        </test-method> <!-- OpenBlog -->
+        <test-method status="PASS" signature="OpenForum()[pri:0, instance:tests.testwebdriver@482f8f11]" name="OpenForum" duration-ms="20099" started-at="2018-12-05T17:21:22Z" finished-at="2018-12-05T17:21:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenForum -->
+        <test-method status="PASS" signature="baseAfterTest()[pri:0, instance:tests.testwebdriver@482f8f11]" name="baseAfterTest" is-config="true" duration-ms="654" started-at="2018-12-05T17:21:42Z" finished-at="2018-12-05T17:21:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseAfterTest -->
       </class> <!-- tests.testwebdriver -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

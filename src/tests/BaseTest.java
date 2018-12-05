@@ -20,9 +20,6 @@ public void baseBeforeTest() {
 	
 }
 
-
-
-
 @AfterTest
 public void baseAfterTest() {
  WebDriverClass.CloseBrowser();

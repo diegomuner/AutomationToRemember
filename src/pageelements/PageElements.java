@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public abstract class PageElements {
 
-
+boolean present;
 protected static WebDriver browser;
 
 //protected By searchField = By.id("search");

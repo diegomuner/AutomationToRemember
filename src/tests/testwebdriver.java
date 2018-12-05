@@ -18,26 +18,24 @@ HomePage homepage;
 	
 	
 	@Test
-	public void test1() throws InterruptedException {
-		driver= WebDriverClass.getDriver();
-		homepage = new HomePage(driver);
-		Thread.sleep(5000);
-		homepage.GoToBlog();	
-		
-		Thread.sleep(5000);
-		
-		
-		
+		public void OpenBlog() throws InterruptedException {
+			driver= WebDriverClass.getDriver();
+			homepage = new HomePage(driver);
+			Thread.sleep(5000);
+			homepage.GoToBlog();
+			Thread.sleep(5000);
+			
+			
+		}
+	@Test
+		public void OpenForum() throws InterruptedException {
 	
-		
-		
-		
-		
-		
-	}
-
-
-
+			driver= WebDriverClass.getDriver();
+			homepage = new HomePage(driver);
+			Thread.sleep(5000);
+			homepage.GoToForum();
+			Thread.sleep(5000);
+}
 
 
 
