@@ -25,8 +25,7 @@ public class ReadProperties {
 			ex.printStackTrace();
 		} 
 		//String url = prop.getProperty("url");
-		String b = prop.getProperty("url");
-		System.out.println(b);
+		String b = prop.getProperty(a);
 		return b;
 		
 		//return url;
