@@ -27,7 +27,8 @@ public class ScreenRecorder  {
     };
 
     private static final String MRL     = "screen//";
-    private static final String SOUT    = ":sout=#transcode{vcodec=h264,vb=%d,scale=%f}:duplicate{dst=file{dst=%s}}";
+   private static final String SOUT    = ":sout=#transcode{vcodec=FLV1,vb=%d,scale=%f}:duplicate{dst=file{dst=%s}}";
+    //private static final String SOUT    = ":sout=#transcode{vcodec=h264,venc=x264{scenecut=100,bframes=0,keyint=10},vb=%d,acodec=none,scale=%f}:duplicate{dst=file{dst=%s}}"; 
     private static final String FPS     = ":screen-fps=%d";
     private static final String CACHING = ":screen-caching=%d";
 
