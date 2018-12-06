@@ -3,14 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="tests.testwebdriver">
+      <class name="tests.testwebdriver$RecordingTest">
         <methods>
           <include name="OpenForum"/>
-          <include name="baseAfterTest"/>
-          <include name="baseBeforeTest"/>
           <include name="OpenBlog"/>
         </methods>
-      </class> <!-- tests.testwebdriver -->
+      </class> <!-- tests.testwebdriver$RecordingTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
