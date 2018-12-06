@@ -10,6 +10,12 @@
 	<classpathentry kind="lib" path="C:/Users/diego/Downloads/selenium-java-3.141.59/libs/okio-1.14.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/diego/Downloads/selenium-java-3.141.59/client-combined-3.141.59-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/diego/Downloads/selenium-java-3.141.59/client-combined-3.141.59.jar"/>
-	<classpathentry kind="lib" path="C:/Program Files/VideoLAN/VLC"/>
+	<classpathentry kind="lib" path="C:/Users/diego/Downloads/slf4j-1.7.25/slf4j-1.7.25/slf4j-api-1.7.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/diego/Downloads/slf4j-1.7.25/slf4j-1.7.25/slf4j-api-1.7.25-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/diego/Downloads/slf4j-1.7.25/slf4j-1.7.25/slf4j-nop-1.7.25.jar"/>
+	<classpathentry kind="lib" path="C:/Users/diego/Downloads/slf4j-1.7.25/slf4j-1.7.25/slf4j-nop-1.7.25-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/diego/Downloads/vlcj-3.10.1-dist/vlcj-3.10.1/slf4j-api-1.7.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/diego/Downloads/jna-3.4.0.jar/jna-3.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/diego/Downloads/vlcj-2.1.0.jar/vlcj-2.1.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

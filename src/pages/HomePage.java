@@ -17,7 +17,7 @@ public HomePage(WebDriver browser) {
 	}
 
 public void GoToBlog() throws InterruptedException {
-	
+	Thread.sleep(5000);
 	try {
 	//browser.findElement(By.xpath("//*[@id=\"PopupSignupForm_0\"]/div[2]/div[1]")).click();
 	WebElement closeDialogBox= browser.findElement(By.xpath("//*[@id=\"PopupSignupForm_0\"]/div[2]/div[1]"));
@@ -27,6 +27,7 @@ public void GoToBlog() throws InterruptedException {
 		System.out.println("no esta el pop up ese chotodcc asique seguimos");
 	}
 	browser.findElement(By.xpath("//*[@id=\"header\"]/nav/ul[1]/li[1]/a")).click();
+	
 	
 	
   
