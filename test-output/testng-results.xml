@@ -2,22 +2,22 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="25848" started-at="2018-12-06T04:01:07Z" finished-at="2018-12-06T04:01:33Z">
+  <suite name="Suite" duration-ms="28600" started-at="2018-12-06T14:35:28Z" finished-at="2018-12-06T14:35:56Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="25848" started-at="2018-12-06T04:01:07Z" finished-at="2018-12-06T04:01:33Z">
+    <test name="Test" duration-ms="28600" started-at="2018-12-06T14:35:28Z" finished-at="2018-12-06T14:35:56Z">
       <class name="tests.testwebdriver$RecordingTest">
-        <test-method status="PASS" signature="OpenBlog()[pri:0, instance:tests.testwebdriver$RecordingTest@1bce4f0a]" name="OpenBlog" duration-ms="20180" started-at="2018-12-06T04:01:12Z" finished-at="2018-12-06T04:01:32Z">
+        <test-method status="PASS" signature="OpenBlog()[pri:0, instance:tests.testwebdriver$RecordingTest@5c3bd550]" name="OpenBlog" duration-ms="20272" started-at="2018-12-06T14:35:33Z" finished-at="2018-12-06T14:35:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBlog -->
       </class> <!-- tests.testwebdriver$RecordingTest -->
       <class name="tests.testwebdriver">
-        <test-method status="PASS" signature="baseBeforeTest()[pri:0, instance:tests.testwebdriver@3bfdc050]" name="baseBeforeTest" is-config="true" duration-ms="4817" started-at="2018-12-06T04:01:07Z" finished-at="2018-12-06T04:01:12Z">
+        <test-method status="PASS" signature="baseBeforeTest()[pri:0, instance:tests.testwebdriver@5e3a8624]" name="baseBeforeTest" is-config="true" duration-ms="5388" started-at="2018-12-06T14:35:28Z" finished-at="2018-12-06T14:35:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseBeforeTest -->
-        <test-method status="PASS" signature="baseAfterTest()[pri:0, instance:tests.testwebdriver@3bfdc050]" name="baseAfterTest" is-config="true" duration-ms="641" started-at="2018-12-06T04:01:32Z" finished-at="2018-12-06T04:01:33Z">
+        <test-method status="PASS" signature="baseAfterTest()[pri:0, instance:tests.testwebdriver@5e3a8624]" name="baseAfterTest" is-config="true" duration-ms="2687" started-at="2018-12-06T14:35:54Z" finished-at="2018-12-06T14:35:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseAfterTest -->

@@ -5,7 +5,6 @@
     <classes>
       <class name="tests.testwebdriver$RecordingTest">
         <methods>
-          <include name="OpenForum"/>
           <include name="OpenBlog"/>
         </methods>
       </class> <!-- tests.testwebdriver$RecordingTest -->
