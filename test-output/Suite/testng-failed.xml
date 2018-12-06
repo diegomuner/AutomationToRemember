@@ -8,6 +8,7 @@
           <include name="OpenForum"/>
           <include name="baseAfterTest"/>
           <include name="baseBeforeTest"/>
+          <include name="OpenBlog"/>
         </methods>
       </class> <!-- tests.testwebdriver -->
     </classes>
