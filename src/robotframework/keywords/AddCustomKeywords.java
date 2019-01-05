@@ -24,7 +24,7 @@ public class AddCustomKeywords {
 	
 	
 	@RobotKeyword
-	public void OpensBrowserAndGoesToHomePage() throws Exception{
+	public void StartRecordingAndOpenBrowser() throws Exception{
 		
 		DateFormat dateFormat = new SimpleDateFormat("yy-MM-dd HH-mm-ss");
 		Date date = new Date();
@@ -40,6 +40,7 @@ public class AddCustomKeywords {
 		}
 	
 	
+		
 	
 	}
 	

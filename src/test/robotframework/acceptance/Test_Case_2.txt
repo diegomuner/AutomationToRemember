@@ -6,5 +6,6 @@ Library     SeleniumLibrary
 
 *** Test Cases ***
 TestCase 1
-	OpensBrowserAndGoesToHomePage
+	StartRecordingAndOpenBrowser
+	sleep  9 s
     ClosesBrowser
