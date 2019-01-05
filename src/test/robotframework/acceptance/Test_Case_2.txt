@@ -1,0 +1,9 @@
+*** Settings ***
+Documentation  A resource file containing the application specific keywords
+Library		robotframework.keywords.AddCustomKeywords
+
+
+*** Test Cases ***
+TestCase 1
+	OpensBrowserAndGoesToHomePage
+    ClosesBrowser
