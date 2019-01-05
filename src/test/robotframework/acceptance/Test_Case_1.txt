@@ -1,0 +1,28 @@
+*** Settings ***
+Documentation  A resource file containing the application specific keywords
+Library		SeleniumLibrary
+Suite Setup  Go to homepage
+Suite Teardown  Close All Browsers
+
+*** Variables ***
+${URL}  https://www.google.com
+${BROWSER}  chrome
+
+*** Test Cases ***
+TestCase 2
+	Given i am at Google Home Page  automation  www.asd.com
+
+
+
+*** Keywords ***
+
+Given i am at Google Home Page
+	[Arguments]  ${search}  ${result}
+	Input Text  name=q   ${search}
+	Sleep  10 s
+	Click Button  name="btnK"
+	Wait Until Page Contains  ${result} 
+
+
+Go to homepage
+		Open Browser  ${URL}  ${BROWSER} 
