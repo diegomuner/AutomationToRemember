@@ -1,0 +1,59 @@
+*** Settings ***
+Documentation  A resource file containing the application specific keywords
+Library		robotframework.keywords.AddCustomKeywords
+Library     SeleniumLibrary
+Suite Setup  Go To Homepage
+Suite Teardown  TearDown
+
+*** Variables ***
+${URL}  https://glo.globallogic.com/apps/glo/login
+${BROWSER}  chrome
+
+*** Keywords ***
+
+Go To Homepage
+ 	StartRecording
+
+TearDown
+	ClosesBrowser
+	Close Browser 	
+	
+Given i am at Glo Login Page
+	Open Browser  ${URL}  ${BROWSER}
+ 	Maximize Browser Window
+ 
+When I Login To Glo
+	[Arguments]  ${user}  ${password}
+	Input Text  id=login   ${user}
+	Input Text  id=password  ${password}
+	Press Key  id=password  \\13
+	Sleep  10 s
+	
+When I Click Skip On Slide
+	Element Should Be Visible  id=slideSkip
+	Click Element  id=slideSkip 
+	
+Then I Am Logged In To Glo
+	Element Should Be Visible  id=search
+
+When I Click My Profile
+	Element Should Be Visible  xpath=//*[@id="myNav"]/ul/li[2]/a
+	Click Element  xpath=//*[@id="myNav"]/ul/li[2]/a
+	
+Then My Profile Page Is Opened
+     Element Should Be Visible  xpath=//*[@id="profileTabs"]/li[1]/a
+
+
+ 
+ *** Test Cases ***
+ 
+TestCase 1 - Login into Glo 
+	Given i am at Glo Login Page 
+	When I Login To Glo  diego.muner  !Globallogic01
+	When I Click Skip On Slide
+	Then i Am Logged In To Glo
+	
+TestCase 2 - Navigate to My Profile	
+	When I Click My Profile
+	Then My Profile Page Is Opened
+	Sleep  4 s

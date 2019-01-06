@@ -11,7 +11,7 @@ ${URL}  https://www.google.com
 ${BROWSER}  chrome
 
 *** Test Cases ***
-TestCase 1
+TestCase 1 - Simple Assertion on a Google Search
 	Given i am at Google Home Page  automation  https://www.automationgame.com/
 
 *** Keywords ***
