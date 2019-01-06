@@ -1,28 +1,30 @@
 *** Settings ***
 Documentation  A resource file containing the application specific keywords
-Library		SeleniumLibrary
-Suite Setup  Go to homepage
-Suite Teardown  Close All Browsers
+Library		robotframework.keywords.AddCustomKeywords
+Library     SeleniumLibrary
+Suite Setup  Go To Homepage
+Suite Teardown  ClosesBrowser
+Test Teardown  Close Browser
 
 *** Variables ***
 ${URL}  https://www.google.com
 ${BROWSER}  chrome
 
 *** Test Cases ***
-TestCase 2
-	Given i am at Google Home Page  automation  www.asd.com
-
-
+TestCase 1
+	Given i am at Google Home Page  automation  https://www.automationgame.com/
 
 *** Keywords ***
 
 Given i am at Google Home Page
 	[Arguments]  ${search}  ${result}
 	Input Text  name=q   ${search}
-	Sleep  10 s
-	Click Button  name="btnK"
+	Press Key  name=q  \\13
+	Sleep  5 s
 	Wait Until Page Contains  ${result} 
 
-
-Go to homepage
-		Open Browser  ${URL}  ${BROWSER} 
+Go To Homepage
+ 	StartRecording
+ 	Open Browser  ${URL}  ${BROWSER}
+ 	Maximize Browser Window
+ 	

@@ -1,4 +1,6 @@
 package webdriver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
@@ -34,6 +36,10 @@ public class WebDriverClass {
 		return browser;
 		
 		
+	}
+	
+	public void PressReturnKey(String value) {
+	browser.findElement(By.name(value)).sendKeys(Keys.RETURN);
 	}
 }
 	

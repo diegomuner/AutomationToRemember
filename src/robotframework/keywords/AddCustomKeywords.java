@@ -1,9 +1,14 @@
 package robotframework.keywords;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.robotframework.javalib.annotation.RobotKeyword;
 import org.robotframework.javalib.annotation.RobotKeywords;
 
 import atu.testrecorder.ATUTestRecorder;
 import atu.testrecorder.exceptions.ATUTestRecorderException;
+import pages.HomePage;
 import webdriver.ReadProperties;
 import webdriver.WebDriverClass;
 
@@ -19,12 +24,13 @@ import static org.assertj.core.api.Assertions.assertThat;
 @RobotKeywords
 public class AddCustomKeywords {
 	ATUTestRecorder recorder;
-	
+	WebDriver driver;
+	HomePage homepage;
 	
 	
 	
 	@RobotKeyword
-	public void StartRecordingAndOpenBrowser() throws Exception{
+	public void StartRecording() throws Exception{
 		
 		DateFormat dateFormat = new SimpleDateFormat("yy-MM-dd HH-mm-ss");
 		Date date = new Date();
@@ -38,11 +44,10 @@ public class AddCustomKeywords {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	
-	
+		driver= WebDriverClass.getDriver();
 		
-	
 	}
+	
 	
 	@RobotKeyword
 	public void ClosesBrowser() throws Exception {
