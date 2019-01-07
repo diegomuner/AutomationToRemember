@@ -55,6 +55,16 @@ public class AddCustomKeywords {
 			 WebDriverClass.CloseBrowser();
 		}
 	
+	/*
+	@RobotKeyword
+	public void ClickSection() {
+		
+	driver= WebDriverClass.getDriver();
+	driver.findElement(By.xpath("//*[@id='myNav']/ul[1]/li[2]/a")).click();
+		
+	}	
+	
+	*/
 }
 	
 

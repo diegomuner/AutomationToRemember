@@ -8,8 +8,12 @@ Suite Teardown  TearDown
 *** Variables ***
 ${URL}  https://glo.globallogic.com/apps/glo/login
 ${BROWSER}  chrome
+${PROFILE1}  xpath=//*[@id="myNav"]/ul[1]/li[2]/a
+
 
 *** Keywords ***
+
+
 
 Go To Homepage
  	StartRecording
@@ -37,13 +41,31 @@ Then I Am Logged In To Glo
 	Element Should Be Visible  id=search
 
 When I Click My Profile
-	Element Should Be Visible  xpath=//*[@id="myNav"]/ul/li[2]/a
-	Click Element  xpath=//*[@id="myNav"]/ul/li[2]/a
+	Element Should Be Visible  xpath=//*[@id="myNav"]/ul[1]/li[2]/a
+	Click Element  xpath=//*[@id="myNav"]/ul[1]/li[2]/a
 	
 Then My Profile Page Is Opened
      Element Should Be Visible  xpath=//*[@id="profileTabs"]/li[1]/a
 
+When I Navigate To Section 
+#sections=
+#1= Home 
+#2= My Profile 
+#3= Organization
+#4= Communities
+#5= Apps
+	[Arguments]  ${leftsection}
+	Element Should Be Visible  xpath=//*[@id="myNav"]/ul[1]/li[${leftsection}]/a  
+	Click Element  xpath=//*[@id="myNav"]/ul[1]/li[${leftsection}]/a  
+	
+When I Search Profile
+	[Arguments]  ${searchprofile}  
+	Input Text  xpath=//*[@id="search"]   ${searchprofile}
+	Press Key  xpath=//*[@id="search"]   \\13
+	Sleep  9 s
+	
 
+  
  
  *** Test Cases ***
  
@@ -53,7 +75,13 @@ TestCase 1 - Login into Glo
 	When I Click Skip On Slide
 	Then i Am Logged In To Glo
 	
-TestCase 2 - Navigate to My Profile	
-	When I Click My Profile
+#TestCase 2 - Navigate to My Profile	
+	#When I Click My Profile
+	#Then My Profile Page Is Opened
+	#Sleep  4 s
+	
+TestCase 3 - Navigate To Left Menu Sections
+	When I Navigate To Section  2
+	Sleep  9 s
 	Then My Profile Page Is Opened
-	Sleep  4 s
+	When I Search Profile  Juan Diaz
