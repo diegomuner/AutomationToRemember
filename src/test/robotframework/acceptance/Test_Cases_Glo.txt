@@ -4,6 +4,7 @@ Library		robotframework.keyword.AddCustomKeywords
 Library     SeleniumLibrary
 Resource  	${EXECDIR}\\src\\robotframework\\keyword\\CommonKeywords.robot
 Resource  	${EXECDIR}\\src\\robotframework\\keyword\\GloKeywords.robot
+Resource  	${EXECDIR}\\src\\robotframework\\variable\\GloVariables.robot
 Suite Setup  Go To Homepage
 Suite Teardown  TearDown
  
@@ -11,7 +12,7 @@ Suite Teardown  TearDown
  
 TestCase 1 - Login into Glo 
 	Given i Am At Glo Login Page
-	When I Login To Glo  diego.muner  !Globallogic01
+	When I Login To Glo  ${glousername}  ${glopassword}
 	When I Click Skip On Slide
 	Then i Am Logged In To Glo
 	
