@@ -22,7 +22,7 @@ TearDown
 	ClosesBrowser
 	Close Browser 	
 	
-Given i am at Glo Login Page
+Given I Am At Glo Login Page
 	Open Browser  ${URL}  ${BROWSER}
  	Maximize Browser Window
  
@@ -46,7 +46,7 @@ When I Click My Profile
 	
 Then My Profile Page Is Opened
      Element Should Be Visible  xpath=//*[@id="profileTabs"]/li[1]/a
-
+    
 When I Navigate To Section 
 #sections=
 #1= Home 
@@ -63,14 +63,24 @@ When I Search Profile
 	Input Text  xpath=//*[@id="search"]   ${searchprofile}
 	Press Key  xpath=//*[@id="search"]   \\13
 	Sleep  9 s
+
+Then I Am At Search Results Page
+#not working
+	Element Should Be Visible  xpath=//*[@id="search_results"]/div[1]/div/div/div[1]/div/h2/text()
 	
+When I Click Result
+#Must receive Name.Surname Case sensitive.
+	[Arguments]  ${resultname}
+	Click Link  href=/users/profile/${resultname}
+	
+Then I Am At Profile
 
   
  
  *** Test Cases ***
  
 TestCase 1 - Login into Glo 
-	Given i am at Glo Login Page 
+	Given i Am At Glo Login Page 
 	When I Login To Glo  diego.muner  !Globallogic01
 	When I Click Skip On Slide
 	Then i Am Logged In To Glo
@@ -82,6 +92,10 @@ TestCase 1 - Login into Glo
 	
 TestCase 3 - Navigate To Left Menu Sections
 	When I Navigate To Section  2
-	Sleep  9 s
+	Sleep  4 s
 	Then My Profile Page Is Opened
 	When I Search Profile  Juan Diaz
+#	Then I Am At Search Results Page
+	When I Click Result  Juan.Diaz
+	Sleep  5 s
+#	Then I Am At Profile  Juan Diaz
