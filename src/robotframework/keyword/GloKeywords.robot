@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation  A resource file containing the application common specific keywords
 Library  SeleniumLibrary
-Resource  	${EXECDIR}\\src\\robotframework\\keyword\\GloKeywords.robot
+
 
 *** Variables ***
 ${URL}  https://glo.globallogic.com/apps/glo/login
@@ -9,6 +9,10 @@ ${BROWSER}  chrome
 
 *** Keywords ***
 
+Given I Am At Glo Login Page
+	Open Browser  ${URL}  ${BROWSER}
+ 	Maximize Browser Window
+ 	
 When I Login To Glo
 	[Arguments]  ${user}  ${password}
 	Input Text  id=login   ${user}
