@@ -1,4 +1,4 @@
-package robotframework.keywords;
+package robotframework.keyword;
 
 import org.robotframework.javalib.library.AnnotationLibrary;
 

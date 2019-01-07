@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation  A resource file containing the application specific keywords
-Library		robotframework.keywords.AddCustomKeywords
+Library		robotframework.keyword.AddCustomKeywords
 Library     SeleniumLibrary
 Suite Setup  Go To Homepage
 Suite Teardown  TearDown
@@ -12,8 +12,6 @@ ${PROFILE1}  xpath=//*[@id="myNav"]/ul[1]/li[2]/a
 
 
 *** Keywords ***
-
-
 
 Go To Homepage
  	StartRecording
@@ -99,3 +97,4 @@ TestCase 3 - Navigate To Left Menu Sections
 	When I Click Result  Juan.Diaz
 	Sleep  5 s
 #	Then I Am At Profile  Juan Diaz
+

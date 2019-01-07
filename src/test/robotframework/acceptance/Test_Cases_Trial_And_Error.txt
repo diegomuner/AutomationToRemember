@@ -1,0 +1,15 @@
+*** Settings ***
+Documentation  A resource file containing the application specific keywords
+#Java libraries are referenced as normal. 
+
+Library		robotframework.keyword.AddCustomKeywords
+Library     SeleniumLibrary
+
+Resource  	${EXECDIR}\\src\\robotframework\\keyword\\CommonKeywords.robot
+
+
+*** Test Cases ***
+
+TestCase 4 - Open Browser On Page
+		Open Browser On  https:www.facebook.com
+		Close Browser
