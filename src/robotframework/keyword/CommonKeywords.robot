@@ -14,3 +14,12 @@ Open Browser On
 	Open Browser  ${URL1}  ${BROWSER}
 	Sleep  5 s
 	
+Go To Homepage
+ 	StartRecording
+
+TearDown
+	ClosesBrowser
+	Close Browser 	
+
+
+	
