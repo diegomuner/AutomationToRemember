@@ -10,6 +10,7 @@ Resource  	${EXECDIR}\\src\\robotframework\\keyword\\CommonKeywords.robot
 
 *** Test Cases ***
 
-TestCase 4 - Open Browser On Page
+TestCase - Different File Trivial Test Case
 		Open Browser On  https:www.facebook.com
+		Sleep  3 s
 		Close Browser
