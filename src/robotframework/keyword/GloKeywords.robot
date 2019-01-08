@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation  A resource file containing the application common specific keywords
 Library  SeleniumLibrary
-
+Resource  	${EXECDIR}\\src\\robotframework\\locator\\GloLocators.robot
 
 *** Variables ***
 ${URL}  https://glo.globallogic.com/apps/glo/login
@@ -15,17 +15,17 @@ Given I Am At Glo Login Page
  	
 When I Login To Glo
 	[Arguments]  ${user}  ${password}
-	Input Text  id=login   ${user}
-	Input Text  id=password  ${password}
-	Press Key  id=password  \\13
+	Input Text  ${loginfield}   ${user}
+	Input Text  ${passwordfield}  ${password}
+	Press Key  ${passwordfield}  \\13
 	Sleep  10 s
 	
 When I Click Skip On Slide
-	Element Should Be Visible  id=slideSkip
-	Click Element  id=slideSkip 
+	Element Should Be Visible  ${welcomeslideskip}
+	Click Element  ${welcomeslideskip} 
 	
 Then I Am Logged In To Glo
-	Element Should Be Visible  id=search
+	Element Should Be Visible  ${searchfield}
 
 When I Click My Profile
 	Element Should Be Visible  xpath=//*[@id="myNav"]/ul[1]/li[2]/a
@@ -47,8 +47,8 @@ When I Navigate To Section
 	
 When I Search Profile
 	[Arguments]  ${searchprofile}  
-	Input Text  xpath=//*[@id="search"]   ${searchprofile}
-	Press Key  xpath=//*[@id="search"]   \\13
+	Input Text  ${searchfield}   ${searchprofile}
+	Press Key  ${searchfield}   \\13
 	Sleep  9 s
 
 Then I Am At Search Results Page
